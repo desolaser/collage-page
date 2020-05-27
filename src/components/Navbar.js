@@ -3,7 +3,7 @@ import AppBar from '@material-ui/core/AppBar'
 
 const Navbar = () => {
     return (
-        <AppBar>
+        <AppBar position="static">
             Imagini
         </AppBar>
     )
