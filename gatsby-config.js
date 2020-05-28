@@ -14,6 +14,7 @@ module.exports = {
         },
       },
     },
-    `gatsby-theme-material-ui`
+    `gatsby-theme-material-ui`,
+    `gatsby-plugin-anchor-links`
   ],
 };

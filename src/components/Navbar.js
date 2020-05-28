@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
@@ -36,9 +37,11 @@ const Navbar = () => {
                         Ingresa
                     </Button>
                 </Link>
-                <Button className={`${classes.button} ${classes.primaryDark}`}>
-                    Sobre nosotros
-                </Button>
+                <Link to="/about">
+                    <Button className={`${classes.button} ${classes.primaryDark}`}>
+                        Sobre nosotros
+                    </Button>
+                </Link>
                 <Link to="/">
                     <Button className={`${classes.button} ${classes.primaryDark}`}>
                         Inicio
@@ -50,12 +53,16 @@ const Navbar = () => {
                 <Typography variant="h4" className={classes.secondaryDark} style={{ marginRight: 60 }}>
                     gini
                 </Typography>
-                <Button className={`${classes.button} ${classes.secondaryDark}`}>
-                    Contacto
-                </Button>
-                <Button className={`${classes.button} ${classes.secondaryDark}`}>
-                    Fotos
-                </Button>
+                <Link to="/contact">
+                    <Button className={`${classes.button} ${classes.secondaryDark}`}>
+                        Contacto
+                    </Button>
+                </Link>
+                <AnchorLink to="/#images" title="Our team">
+                    <Button className={`${classes.button} ${classes.secondaryDark}`}>
+                        Fotos
+                    </Button>
+                </AnchorLink>
                 <Link to="/register">
                     <Button className={`${classes.button} ${classes.secondaryDark}`}>
                         Registrarse

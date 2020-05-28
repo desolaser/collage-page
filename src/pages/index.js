@@ -109,20 +109,22 @@ const Index = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <FilterBar/>
-                    <Grid container justify="center" spacing={1} style={{ marginTop: 20 }}>
-                        <Grid item>
-                            <Typography variant="h5" color="primary" align="center" gutterBottom>
-                                Imágenes
-                            </Typography>
+                    <section id="images">
+                        <FilterBar/>
+                        <Grid container justify="center" spacing={1} style={{ marginTop: 20 }}>
+                            <Grid item>
+                                <Typography variant="h5" color="primary" align="center" gutterBottom>
+                                    Imágenes
+                                </Typography>
+                            </Grid>
+                            <Grid item>
+                                <Typography variant="h5" color="secondary" align="center" gutterBottom>
+                                    recientes
+                                </Typography>
+                            </Grid>
                         </Grid>
-                        <Grid item>
-                            <Typography variant="h5" color="secondary" align="center" gutterBottom>
-                                recientes
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                    <Gallery />                  
+                        <Gallery/>
+                    </section>                
                 </Container>
             </Layout>
         </ThemeProvider>
