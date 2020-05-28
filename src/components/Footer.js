@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
         flexGrow: 1
     },
     paperPrimary: {
-        backgroundColor: theme.palette.primary.main,
+        backgroundColor: theme.palette.primary.dark,
         color: 'white',
         borderRadius: 0,
         boxShadow: 0,
@@ -28,6 +28,9 @@ const useStyles = makeStyles(theme => ({
         borderRadius: 0,
         boxShadow: 0,
         height: 250
+    },
+    primaryDark: {
+        color: theme.palette.primary.dark
     }
 }))
 
@@ -102,7 +105,7 @@ const Footer = () => {
                         </Typography>
                     </div>
                     <div style={{ paddingTop: 30, display: 'inline-block' }}>
-                        <Typography variant="h2" color="primary">
+                        <Typography className={classes.primaryDark} variant="h2">
                             gini
                         </Typography>
                         <Grid container justify="flex-start" spacing={2}>
