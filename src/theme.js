@@ -71,6 +71,13 @@ const theme = createMuiTheme({
             fontWeight: 'light',
             lineSpacing: 1.5
         }
+    },
+    overrides: {
+        MuiButton: {
+            root: {
+                padding: '10px 20px'
+            }
+        }
     }
 });
 
