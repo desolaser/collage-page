@@ -1,13 +1,17 @@
 import React from "react"
 
 import Layout from "../components/Layout"
+import theme from "../theme"
+import { ThemeProvider } from '@material-ui/core/styles'
 
-const Home = () => {
+const Index = () => {
     return (
-        <Layout>
-            Hello world!            
-        </Layout>
+        <ThemeProvider theme={theme}>
+            <Layout>
+                Hello world!
+            </Layout>
+        </ThemeProvider>
     )
 }
 
-export default Home
+export default Index
