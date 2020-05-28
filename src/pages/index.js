@@ -2,6 +2,7 @@ import React from "react"
 
 import theme from "../theme"
 
+import Avatar from '@material-ui/core/Avatar'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
@@ -26,7 +27,9 @@ const Index = () => {
                 <Container className={classes.container}>
                 <Grid container justify="center">
                     <Grid item xs={4}>
-
+                        <Avatar>
+                            
+                        </Avatar>
                     </Grid>                    
                     <Grid item xs={4}>
                         <Panel>
