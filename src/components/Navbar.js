@@ -15,6 +15,12 @@ const useStyles = makeStyles(theme => ({
     },
     button: {
         margin: '0 40px'
+    },
+    primaryDark: {
+        color: theme.palette.primary.dark
+    },
+    secondaryDark: {
+        color: theme.palette.secondary.dark        
     }
 }))
 
@@ -23,28 +29,28 @@ const Navbar = () => {
     return (
         <AppBar className={classes.root} position="static">
             <Toolbar>
-                <Button className={classes.button} color="primary">
+                <Button className={`${classes.button} ${classes.primaryDark}`}>
                     Ingresa
                 </Button>
-                <Button className={classes.button} color="primary">
+                <Button className={`${classes.button} ${classes.primaryDark}`}>
                     Sobre nosotros
                 </Button>
-                <Button className={classes.button} color="primary">
+                <Button className={`${classes.button} ${classes.primaryDark}`}>
                     Inicio
                 </Button>
-                <Typography variant="h4" color="primary" style={{ marginLeft: 60 }}>
+                <Typography variant="h4" className={classes.primaryDark} style={{ marginLeft: 60 }}>
                     Ima
                 </Typography>
-                <Typography variant="h4" color="secondary" style={{ marginRight: 60 }}>
+                <Typography variant="h4" className={classes.secondaryDark} style={{ marginRight: 60 }}>
                     gini
                 </Typography>
-                <Button className={classes.button} color="secondary">
+                <Button className={`${classes.button} ${classes.secondaryDark}`}>
                     Contacto
                 </Button>
-                <Button className={classes.button} color="secondary">
+                <Button className={`${classes.button} ${classes.secondaryDark}`}>
                     Fotos
                 </Button>
-                <Button className={classes.button} color="secondary">
+                <Button className={`${classes.button} ${classes.secondaryDark}`}>
                     Registrarse
                 </Button>
             </Toolbar>
