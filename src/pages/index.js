@@ -28,8 +28,13 @@ const useStyles = makeStyles(theme => ({
         borderRadius: '50%',
         boxShadow: `0 24px #C6003A`
     },
-    filterBar: {
-        marginTop: 40
+    imagePrimary: {
+        borderRadius: 10,
+        boxShadow: `0 24px #5C007A`
+    },
+    imageSecondary: {
+        borderRadius: 10,
+        boxShadow: `0 24px #C6003A`
     }
 }))
 
@@ -39,7 +44,7 @@ const Index = () => {
         <ThemeProvider theme={theme}>
             <Layout>
                 <Container className={classes.container}>
-                    <Grid container justify="center" spacing={5}>
+                    <Grid container justify="center" spacing={5} style={{ marginBottom: 20 }}>
                         <Grid item xs={4}>
                             <Image className={classes.imageCirclePrimary}
                                 src={image}
@@ -105,7 +110,121 @@ const Index = () => {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <FilterBar className={classes.FilterBar} />
+                    <FilterBar/>
+                    <Grid container justify="center" spacing={1} style={{ marginTop: 20 }}>
+                        <Grid item>
+                            <Typography variant="h5" color="primary" align="center" gutterBottom>
+                                Imágenes
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="h5" color="secondary" align="center" gutterBottom>
+                                recientes
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container justify="center" spacing={3} style={{ marginTop: 20 }}>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} 
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                        <Grid item xs={3}>
+                            <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                                src={image}
+                            />
+                        </Grid>
+                    </Grid>
                 </Container>
             </Layout>
         </ThemeProvider>
