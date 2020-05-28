@@ -1,19 +1,23 @@
-import React from "react"
+import React from 'react'
 
 import { Link } from 'gatsby'
 
-import theme from "../theme"
+import theme from '../theme'
 
+import Image from 'material-ui-image'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
 import Typography from '@material-ui/core/Typography'
+import Paper from 'GridList@material-ui/core/Paper'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Layout from '../components/Layout'
 import Panel from '../components/Panel'
+
+import maps from '../images/google-maps.jpg'
 
 const useStyles = makeStyles(theme => ({
     container: {
@@ -22,10 +26,22 @@ const useStyles = makeStyles(theme => ({
     input: {
         width: '100%',
         margin: '25px 0'
+    },
+    paperTop: {
+        height: 100,
+        borderRadius: 0,
+        boxShadow: 0,
+        backgroundColor: theme.palette.primary.main
+    },
+    paperBottom: {
+        height: 100,
+        borderRadius: 0,
+        boxShadow: 0,
+        backgroundColor: theme.palette.secondary.main
     }
 }))
 
-const Index = () => {
+const Contact = () => {
     const classes = useStyles()
     return (
         <ThemeProvider theme={theme}>
@@ -67,7 +83,9 @@ const Index = () => {
                             </Panel>                            
                         </Grid>
                         <Grid item xs={12} sm={6}>
-                            
+                            <Paper className={classes.paperTop}></Paper>
+                            <Image src={maps} style={{ height: 300 }}/>
+                            <Paper className={classes.paperBottom}></Paper>
                         </Grid>
                     </Grid>                    
                 </Container>
@@ -76,4 +94,4 @@ const Index = () => {
     )
 }
 
-export default Index
+export default Contact
