@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Link } from "gatsby"
+ 
 import theme from "../theme"
 
 import Image from 'material-ui-image'
@@ -53,14 +55,18 @@ const Index = () => {
                                 </Typography>
                                 <Grid container justify="center" spacing={8}>
                                     <Grid item>
-                                        <Button variant="contained" color="primary">
-                                            Ingresa
-                                        </Button>
+                                        <Link to="/login">
+                                            <Button variant="contained" color="primary">
+                                                Ingresa
+                                            </Button>
+                                        </Link>
                                     </Grid>
                                     <Grid item>
-                                        <Button variant="contained" color="secondary">
-                                            Registrate
-                                        </Button>                                    
+                                        <Link to="/register">
+                                            <Button variant="contained" color="secondary">
+                                                Registrate
+                                            </Button>
+                                        </Link>                                 
                                     </Grid>
                                 </Grid>
                             </Panel>
