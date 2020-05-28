@@ -29,7 +29,7 @@ const useStyles = makeStyles(theme => ({
     }
 }))
 
-const Login = () => {
+const Register = () => {
     const classes = useStyles()
     return (
         <ThemeProvider theme={theme}>
@@ -50,11 +50,14 @@ const Login = () => {
                                 </Grid>
                             </Grid>
                             <TextField className={classes.input} label="Email" variant="outlined"/>
-                            <TextField className={classes.input} label="Password" variant="outlined" type="password"/>
+                            <TextField className={classes.input} label="Nombre usuario" variant="outlined"/>
+                            <TextField className={classes.input} label="Edad" variant="outlined"/>
+                            <TextField className={classes.input} label="Contraseña" variant="outlined" type="password"/>
+                            <TextField className={classes.input} label="Repetir contraseña" variant="outlined" type="password"/>
                             <Grid container justify="center" spacing={8}>
                                 <Grid item>
                                     <Button variant="contained" color="primary">
-                                        Ingresa
+                                        Registrarse
                                     </Button>
                                 </Grid>
                                 <Grid item>
@@ -72,4 +75,4 @@ const Login = () => {
     )
 }
 
-export default Login
+export default Register
