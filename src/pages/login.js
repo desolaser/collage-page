@@ -1,5 +1,7 @@
 import React from "react"
 
+import { Link } from "gatsby"
+
 import theme from "../theme"
 
 import Container from '@material-ui/core/Container'
@@ -58,9 +60,11 @@ const Login = () => {
                                     </Button>
                                 </Grid>
                                 <Grid item>
-                                    <Button variant="contained" color="secondary">
-                                        Volver
-                                    </Button>                                    
+                                    <Link to="/">
+                                        <Button variant="contained" color="secondary">
+                                            Volver
+                                        </Button>   
+                                    </Link>                                 
                                 </Grid>
                             </Grid>
                         </Paper>                       

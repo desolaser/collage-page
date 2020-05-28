@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from "gatsby"
+
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
@@ -29,9 +31,11 @@ const Navbar = () => {
     return (
         <AppBar className={classes.root} position="static">
             <Toolbar>
-                <Button className={`${classes.button} ${classes.primaryDark}`}>
-                    Ingresa
-                </Button>
+                <Link to="/login">
+                    <Button className={`${classes.button} ${classes.primaryDark}`}>
+                        Ingresa
+                    </Button>
+                </Link>
                 <Button className={`${classes.button} ${classes.primaryDark}`}>
                     Sobre nosotros
                 </Button>
@@ -50,9 +54,11 @@ const Navbar = () => {
                 <Button className={`${classes.button} ${classes.secondaryDark}`}>
                     Fotos
                 </Button>
-                <Button className={`${classes.button} ${classes.secondaryDark}`}>
-                    Registrarse
-                </Button>
+                <Link to="/register">
+                    <Button className={`${classes.button} ${classes.secondaryDark}`}>
+                        Registrarse
+                    </Button>
+                </Link>
             </Toolbar>
         </AppBar>
     )
