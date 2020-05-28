@@ -39,9 +39,11 @@ const Navbar = () => {
                 <Button className={`${classes.button} ${classes.primaryDark}`}>
                     Sobre nosotros
                 </Button>
-                <Button className={`${classes.button} ${classes.primaryDark}`}>
-                    Inicio
-                </Button>
+                <Link to="/">
+                    <Button className={`${classes.button} ${classes.primaryDark}`}>
+                        Inicio
+                    </Button>
+                </Link>
                 <Typography variant="h4" className={classes.primaryDark} style={{ marginLeft: 60 }}>
                     Ima
                 </Typography>
