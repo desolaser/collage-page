@@ -7,6 +7,7 @@ import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
+import FilterBar from "../components/FilterBar"
 import { ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -27,6 +28,9 @@ const useStyles = makeStyles(theme => ({
         borderRadius: '50%',
         boxShadow: `0 24px #C6003A`
     },
+    filterBar: {
+        marginTop: 40
+    }
 }))
 
 const Index = () => {
@@ -101,6 +105,7 @@ const Index = () => {
                             </Grid>
                         </Grid>
                     </Grid>
+                    <FilterBar className={classes.FilterBar} />
                 </Container>
             </Layout>
         </ThemeProvider>
