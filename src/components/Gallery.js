@@ -35,11 +35,11 @@ const Gallery = () => {
         <Grid className={classes.root} container justify="center" spacing={3}>
             {
                 data.allFile.edges.map(
-                    (edge) => {
+                    (edge, index) => {                        
                         return (
                             <Grid item xs={12} sm={6} md={3}>
                                 <Img 
-                                    className={classes.imagePrimary}
+                                    className={(index % 2 === 0) ? classes.imagePrimary : classes.imageSecondary}
                                     key={edge.id}
                                     fluid={edge.node.childImageSharp.fluid}
                                 /> 
