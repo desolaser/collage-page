@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
+        name: `showcase`,
+        path: `${__dirname}/src/images/showcase`,
       },
     },
     `gatsby-theme-material-ui`,
