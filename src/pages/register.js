@@ -46,6 +46,7 @@ const Register = () => {
     const classes = useStyles()
     return (
         <ThemeProvider theme={theme}>
+            <SEO />
             <Container>
                 <Paper className={classes.paper}>
                     <Grid container justify="center">
