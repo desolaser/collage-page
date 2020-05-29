@@ -5,6 +5,13 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Imagini",
+    description: "Encuentra las imágenes que desees",
+    url: "http://discretuum.com/projects/imagini",
+    image: "/office.jpg",
+    author: "Discretuum"
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-material-ui`,
