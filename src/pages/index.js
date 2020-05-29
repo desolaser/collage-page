@@ -5,7 +5,6 @@ import { Link } from "gatsby"
 import theme from "../theme"
 
 import Image from 'material-ui-image'
-import Box from '@material-ui/core/Box'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'

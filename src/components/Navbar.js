@@ -5,10 +5,13 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
+import MenuItem from '@material-ui/core/MenuItem'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 
 import { makeStyles } from '@material-ui/core/styles'
+
+import ButtonAppBarCollapse from './ButtonAppBarCollapse'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -17,7 +20,13 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: 'white'
     },
     button: {
-        margin: '0 40px'
+        margin: '0 40px',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        },
+        [theme.breakpoints.up('md')]: {
+            display: 'block'
+        },
     },
     primaryDark: {
         color: theme.palette.primary.dark
@@ -58,7 +67,7 @@ const Navbar = () => {
                         Contacto
                     </Button>
                 </Link>
-                <AnchorLink to="/#images" title="Our team">
+                <AnchorLink to="/#images">
                     <Button className={`${classes.button} ${classes.secondaryDark}`}>
                         Fotos
                     </Button>
@@ -67,7 +76,15 @@ const Navbar = () => {
                     <Button className={`${classes.button} ${classes.secondaryDark}`}>
                         Registrarse
                     </Button>
-                </Link>
+                </Link>                
+                <ButtonAppBarCollapse>
+                    <Link to="/login"><MenuItem>Ingresa</MenuItem></Link>
+                    <Link to="/about"><MenuItem>Sobre nosotros</MenuItem></Link>
+                    <Link to="/"><MenuItem>Inicio</MenuItem></Link>
+                    <Link to="/contact"><MenuItem>Contactos</MenuItem></Link>
+                    <AnchorLink to="/#images"><MenuItem>Fotos</MenuItem></AnchorLink>
+                    <Link to="/register"><MenuItem>Registrarse</MenuItem></Link>
+                </ButtonAppBarCollapse>
             </Toolbar>
         </AppBar>
     )
