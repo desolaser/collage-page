@@ -16,6 +16,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Gallery from '../components/Gallery'
+import SEO from '../components/SEO'
 
 const useStyles = makeStyles(theme => ({    
     paper: {

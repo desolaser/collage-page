@@ -14,6 +14,7 @@ import { ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 
 import Gallery from '../components/Gallery'
+import SEO from '../components/SEO'
 
 const useStyles = makeStyles(theme => ({    
     paper: {
@@ -42,6 +43,7 @@ const Login = () => {
     const classes = useStyles()
     return (
         <ThemeProvider theme={theme}>
+            <SEO />
             <Container>
                 <Paper className={classes.paper}>
                     <Grid container justify="center">
