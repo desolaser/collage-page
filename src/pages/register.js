@@ -22,10 +22,18 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: '#F2F2F2',
         padding: 20,
         boxShadow: '0 14px 16px rgba(0, 0, 0, 0.5)',
-        width: 600,
-        position: 'fixed',
+        position: 'absolute',
+        left: '50%',
+        transform: 'translate(-50%, 0)',
         zIndex: 1,
-        top: 50
+        [theme.breakpoints.down('sm')]: {
+            width: '90%',
+            top: 10,
+        },
+        [theme.breakpoints.up('md')]: {
+            width: '40%',
+            top: 100,
+        },
     },
     input: {
         width: '100%',
@@ -38,55 +46,51 @@ const Register = () => {
     return (
         <ThemeProvider theme={theme}>
             <Container>
-                <Grid container justify="center" alignItems="center">
-                    <Grid item xs={6}>
-                        <Paper className={classes.paper}>
-                            <Grid container justify="center">
-                                <Grid item>
-                                    <Typography variant="h4" color="primary">
-                                        Ima
-                                    </Typography>                            
-                                </Grid>
-                                <Grid item>
-                                    <Typography variant="h4" color="secondary">
-                                        gini
-                                    </Typography>                            
-                                </Grid>
-                            </Grid>
-                            <TextField className={classes.input} label="Email" variant="outlined"/>
-                            <TextField className={classes.input} label="Nombre usuario" variant="outlined"/>
-                            <TextField className={classes.input} label="Edad" variant="outlined"/>
-                            <TextField className={classes.input} label="Contraseña" variant="outlined" type="password"/>
-                            <TextField className={classes.input} label="Repetir contraseña" variant="outlined" type="password"/>
-                            <FormControlLabel
-                                className={classes.input}
-                                control={
-                                <Checkbox
-                                    checked={true}
-                                    onChange={() => true}
-                                    name="checkedB"
-                                    color="primary"
-                                />
-                                }
-                                label="Acepto los términos de servicio"
-                            />
-                            <Grid container justify="center" spacing={8}>
-                                <Grid item>
-                                    <Button variant="contained" color="primary">
-                                        Registrarse
-                                    </Button>
-                                </Grid>
-                                <Grid item>
-                                    <Link to="/">
-                                        <Button variant="contained" color="secondary">
-                                            Volver
-                                        </Button>
-                                    </Link>                                   
-                                </Grid>
-                            </Grid>
-                        </Paper>                       
+                <Paper className={classes.paper}>
+                    <Grid container justify="center">
+                        <Grid item>
+                            <Typography variant="h4" color="primary">
+                                Ima
+                            </Typography>                            
+                        </Grid>
+                        <Grid item>
+                            <Typography variant="h4" color="secondary">
+                                gini
+                            </Typography>                            
+                        </Grid>
                     </Grid>
-                </Grid>
+                    <TextField className={classes.input} label="Email" variant="outlined"/>
+                    <TextField className={classes.input} label="Nombre usuario" variant="outlined"/>
+                    <TextField className={classes.input} label="Edad" variant="outlined"/>
+                    <TextField className={classes.input} label="Contraseña" variant="outlined" type="password"/>
+                    <TextField className={classes.input} label="Repetir contraseña" variant="outlined" type="password"/>
+                    <FormControlLabel
+                        className={classes.input}
+                        control={
+                        <Checkbox
+                            checked={true}
+                            onChange={() => true}
+                            name="checkedB"
+                            color="primary"
+                        />
+                        }
+                        label="Acepto los términos de servicio"
+                    />
+                    <Grid container justify="center" spacing={8}>
+                        <Grid item>
+                            <Button variant="contained" color="primary">
+                                Registrarse
+                            </Button>
+                        </Grid>
+                        <Grid item>
+                            <Link to="/">
+                                <Button variant="contained" color="secondary">
+                                    Volver
+                                </Button>
+                            </Link>                                   
+                        </Grid>
+                    </Grid>
+                </Paper> 
                 <Gallery />                
             </Container>
         </ThemeProvider>
