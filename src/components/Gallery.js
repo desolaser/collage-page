@@ -8,6 +8,9 @@ import { makeStyles } from '@material-ui/core/styles'
 import image from '../images/showcase/abstract-art-background-blur-564908.jpg'
 
 const useStyles = makeStyles(theme => ({    
+    root: {
+        margin: '40px 0'
+    },
     imagePrimary: {
         borderRadius: 10,
         boxShadow: `0 24px #5C007A`
@@ -21,7 +24,7 @@ const useStyles = makeStyles(theme => ({
 const Gallery = () => {
     const classes = useStyles()
     return (
-        <Grid container justify="center" spacing={3} style={{ marginTop: 20 }}>
+        <Grid className={classes.root} container justify="center" spacing={3}>
             <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
