@@ -22,102 +22,102 @@ const Gallery = () => {
     const classes = useStyles()
     return (
         <Grid container justify="center" spacing={3} style={{ marginTop: 20 }}>
-            <Grid item xs={3}>
-                <Image className={classes.imagePrimary}
-                    src={image}
-                />
-            </Grid>
-            <Grid item xs={3}>
-                <Image className={classes.imagePrimary}
-                    src={image}
-                />
-            </Grid>
-            <Grid item xs={3}>
-                <Image className={classes.imageSecondary} 
-                    src={image}
-                />
-            </Grid>
-            <Grid item xs={3}>
-                <Image className={classes.imageSecondary}
-                    src={image}
-                />
-            </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
             </Grid>
-            <Grid item xs={3}>
+            <Grid item xs={12} sm={6} md={3}>
+                <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                    src={image}
+                />
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+                <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                    src={image}
+                />
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+                <Image className={classes.imagePrimary} style={{ marginTop: 20 }}
+                    src={image}
+                />
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
+                <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
+                    src={image}
+                />
+            </Grid>
+            <Grid item xs={12} sm={6} md={3}>
                 <Image className={classes.imageSecondary} style={{ marginTop: 20 }}
                     src={image}
                 />
