@@ -28,6 +28,18 @@ const useStyles = makeStyles(theme => ({
         boxShadow: '0 14px 16px rgba(0, 0, 0, 0.5)',
         height: 300,
         padding: 20
+    },
+    servicesDown: {
+        backgroundColor: '#F2F2F2',
+        boxShadow: '0 14px 16px rgba(0, 0, 0, 0.5)',
+        height: 300,
+        padding: 20,
+        [theme.breakpoints.down('sm')]: {
+            marginTop: 0,
+        },
+        [theme.breakpoints.up('md')]: {
+            marginTop: 40,
+        }
     }
 }))
 
@@ -38,35 +50,35 @@ const Contact = () => {
             <Layout>
                 <Container className={classes.container}>
                     <Grid container spacing={8}>
-                        <Grid item xs={2}>
+                        <Grid item xs={0} sm={2}>
                             <Image src={Phone} />
                         </Grid>
-                        <Grid item xs={2}>
+                        <Grid item xs={0} sm={2}>
                             <Image src={Geo} />
                         </Grid>
-                        <Grid item xs={4}>
-                                <Typography variant="h3" color="primary" align="center" gutterBottom>
-                                    ¿Qué es imagini?
-                                </Typography>
-                                <Typography variant="body1" color="secondary" align="center">
-                                    Esto es un portal de imágenes en el cual puedes publicar
-                                    y compartir tu arte, tus diseños e imágenes. Nosotros
-                                    nos encargaremos de hacerlas visibles y de que puedas 
-                                    compartirlas de forma fácil y amigable.
-                                </Typography>
+                        <Grid item xs={12} sm={4}>
+                            <Typography variant="h3" color="primary" align="center" gutterBottom>
+                                ¿Qué es imagini?
+                            </Typography>
+                            <Typography variant="body1" color="secondary" align="center">
+                                Esto es un portal de imágenes en el cual puedes publicar
+                                y compartir tu arte, tus diseños e imágenes. Nosotros
+                                nos encargaremos de hacerlas visibles y de que puedas 
+                                compartirlas de forma fácil y amigable.
+                            </Typography>
                         </Grid>
-                        <Grid item item xs={2}>
+                        <Grid item item xs={0} sm={2}>
                             <Image src={World} />
                         </Grid>
-                        <Grid item item xs={2}>
+                        <Grid item item xs={0} sm={2}>
                             <Image src={Star} />
                         </Grid>
                     </Grid>
                     <Grid container justify="space-around" spacing={2}>
-                        <Grid item item xs={2}>
+                        <Grid item item xs={0} sm={2}>
                             <Image src={Share} />
                         </Grid>
-                        <Grid item item xs={2}>
+                        <Grid item item xs={0} sm={2}>
                             <Image src={Cloud} />
                         </Grid>
                     </Grid>
@@ -74,7 +86,7 @@ const Contact = () => {
                         Servicios
                     </Typography>
                     <Grid container spacing={4}>
-                        <Grid item xs>
+                        <Grid item xs={12} sm={6} md={3}>
                             <Paper className={classes.services}>
                                 <Typography variant="h4" color="primary" align="center" gutterBottom>
                                     Marketing
@@ -85,8 +97,8 @@ const Contact = () => {
                                 </Typography> 
                             </Paper>
                         </Grid>
-                        <Grid item xs>
-                            <Paper className={classes.services} style={{ marginTop: 40 }}>
+                        <Grid item xs={12} sm={6} md={3}>
+                            <Paper className={classes.servicesDown}>
                                 <Typography variant="h4" color="primary" align="center" gutterBottom>
                                     Diseños web
                                 </Typography>
@@ -96,8 +108,8 @@ const Contact = () => {
                                 </Typography> 
                             </Paper>
                         </Grid>
-                        <Grid item xs>
-                            <Paper className={classes.services} style={{ marginTop: 40 }}>
+                        <Grid item xs={12} sm={6} md={3}>
+                            <Paper className={classes.servicesDown}>
                                 <Typography variant="h4" color="primary" align="center" gutterBottom>
                                     Imágenes corporativas
                                 </Typography>
@@ -107,7 +119,7 @@ const Contact = () => {
                                 </Typography> 
                             </Paper>                            
                         </Grid>
-                        <Grid item xs>
+                        <Grid item xs={12} sm={6} md={3}>
                             <Paper className={classes.services}>
                                 <Typography variant="h4" color="primary" align="center" gutterBottom>
                                     SEO
