@@ -5,11 +5,12 @@ import { Link } from "gatsby"
 import theme from "../theme"
 
 import Image from 'material-ui-image'
+import Box from '@material-ui/core/Box'
 import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 import Typography from '@material-ui/core/Typography'
-import FilterBar from "../components/FilterBar"
+import FilterBar from '../components/FilterBar'
 import { ThemeProvider } from '@material-ui/core/styles'
 import { makeStyles } from '@material-ui/core/styles'
 
@@ -39,13 +40,13 @@ const Index = () => {
         <ThemeProvider theme={theme}>
             <Layout>
                 <Container className={classes.container}>
-                    <Grid container justify="center" spacing={5} style={{ marginBottom: 20 }}>
-                        <Grid item xs={4}>
+                    <Grid container justify="center" spacing={5} style={{ marginBottom: 20 }}>                        
+                        <Grid item xs={0} sm={4}>
                             <Image className={classes.imageCirclePrimary}
                                 src={image}
                             />
                         </Grid>                    
-                        <Grid item xs={4}>
+                        <Grid item xs={12} md={4}>
                             <Panel>
                                 <Typography variant="h3" color="primary" align="center" gutterBottom>
                                     Encuentra imágenes de lo que desees
@@ -71,38 +72,38 @@ const Index = () => {
                                 </Grid>
                             </Panel>
                         </Grid>
-                        <Grid item xs={4}>
+                        <Grid item xs={0} sm={4}>
                             <Image className={classes.imageCircleSecondary}
                                 src={image}
                             />
                         </Grid>
                         <Grid container justify="center" spacing={5} style={{ padding: '40px 0' }}>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCirclePrimary}
                                     src={image}
                                 />
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCirclePrimary} style={{ marginTop: 20 }}
                                     src={image}
                                 />
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCirclePrimary} style={{ marginTop: 40 }}
                                     src={image}
                                 />
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCircleSecondary} style={{ marginTop: 40 }}
                                     src={image}
                                 />
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCircleSecondary} style={{ marginTop: 20 }}
                                     src={image}
                                 />
                             </Grid>
-                            <Grid item xs={2}>
+                            <Grid item xs={0} sm={4} md={2}>
                                 <Image className={classes.imageCircleSecondary}
                                     src={image}
                                 />
