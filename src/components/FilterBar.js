@@ -5,8 +5,11 @@ import Toolbar from '@material-ui/core/Toolbar'
 import Typography from '@material-ui/core/Typography'
 import Button from '@material-ui/core/Button'
 import TextField from '@material-ui/core/TextField'
+import MenuItem from '@material-ui/core/MenuItem'
 
 import { makeStyles } from '@material-ui/core/styles'
+
+import ButtonAppBarCollapse from './ButtonAppBarCollapse'
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -17,7 +20,13 @@ const useStyles = makeStyles(theme => ({
     button: {
         backgroundColor: theme.palette.primary.dark,
         margin: '0 40px',
-        color: 'white'
+        color: 'white',
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        },
+        [theme.breakpoints.up('md')]: {
+            display: 'block'
+        },
     },
     primaryDark: {
         color: theme.palette.primary.dark
@@ -28,7 +37,13 @@ const useStyles = makeStyles(theme => ({
     search: {
         backgroundColor: 'white',
         color: "#F2F2F2",
-        borderRadius: 10
+        borderRadius: 10,
+        [theme.breakpoints.down('sm')]: {
+            display: 'none'
+        },
+        [theme.breakpoints.up('md')]: {
+            display: 'block'
+        },
     }
 }))
 
@@ -59,6 +74,14 @@ const Navbar = () => {
                     Más tags
                 </Button>
                 <TextField className={classes.search} label="Search Bar" variant="filled"/>
+                <ButtonAppBarCollapse>
+                    <MenuItem>Diseño</MenuItem>
+                    <MenuItem>Hogar</MenuItem>
+                    <MenuItem>Juegos</MenuItem>
+                    <MenuItem>Animación</MenuItem>
+                    <MenuItem>Datos</MenuItem>
+                    <MenuItem>Más tags</MenuItem>
+                </ButtonAppBarCollapse>
             </Toolbar>
         </AppBar>
     )

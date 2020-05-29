@@ -76,7 +76,7 @@ const Navbar = () => {
                     <Button className={`${classes.button} ${classes.secondaryDark}`}>
                         Registrarse
                     </Button>
-                </Link>                
+                </Link>
                 <ButtonAppBarCollapse>
                     <Link to="/login"><MenuItem>Ingresa</MenuItem></Link>
                     <Link to="/about"><MenuItem>Sobre nosotros</MenuItem></Link>
