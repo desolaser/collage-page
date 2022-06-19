@@ -1,10 +1,10 @@
-# Collage page concept
+# Collage page design
 
 This it's a page based on pinterest image portal but with
 corporative page features added on, like contact and about us pages.
-This is only the front-end part, it has not business logic.
 
-When i made it i was experimenting on Gatbsy and Material UI
+When i made it i was experimenting with Gatbsy and Material UI, so i never
+planned to introduce business logic, at least not yet. Maybe in the future.
 
 ## Features
 
@@ -14,7 +14,14 @@ When i made it i was experimenting on Gatbsy and Material UI
 * Auth verification pages (Login and register)
 * SEO
 
-## Getting started
+## Usage
 
+Write in your terminal this commands:
+
+* `git clone https://github.com/desolaser/collage-page.git`
 * `cd collage-page`
-* `gatsby develop` 
+* `gatsby develop`
+
+Now it should run in your browser, and you can explore the pages freely.
+
+If you want, you can see the design in this [link](https://imagini.lakehosting.cl) instead
